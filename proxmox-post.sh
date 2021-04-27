@@ -8,7 +8,7 @@
 # //   apt -y install curl
 # //   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/garjones/gareth.com/master/proxmox-post.sh)"
 # //
-# // Based on - https://www.tecmint.com/install-apache-tomcat-on-debian-10/
+# // https://gareth.com/index.php/2021/02/17/proxmox-6-post-install-steps/
 # //----------------------------------------------------------------------------------------------------------
 # // Gareth Jones - gareth@gareth.com
 # //----------------------------------------------------------------------------------------------------------
