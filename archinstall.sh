@@ -4,10 +4,7 @@
 # //----------------------------------------------------------------------------------------------------------
 # // my script to automate arch installations
 # //----------------------------------------------------------------------------------------------------------
-# // To run this script remotely:
-# //   apt -y install curl
-# //   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/garjones/gareth.com/master/archinstall.sh)"
-# //
+# // To run this script see:
 # // https://gareth.com/index.php/2020/07/16/semi-automated-arch-install/
 # //----------------------------------------------------------------------------------------------------------
 # // Gareth Jones - gareth@gareth.com
