@@ -75,8 +75,8 @@ systemctl start tomcat
 systemctl enable tomcat
 
 # ask for web manager username and password
-read -p "Username:" user_var  
-read -p "Password:" pwd_var  
+read -p    "Username:" user_var  
+read -p -s "Password:" pwd_var  
 
 # enable login for tomcat manager and host manager
 pause 'enable login for tomcat manager and host manager [Enter]'
