@@ -9,10 +9,7 @@
 # //----------------------------------------------------------------------------------------------------------
 # // incomplete Proxmox passthrough script
 # //----------------------------------------------------------------------------------------------------------
-# // To run this script remotely:
-# //   apt -y install curl
-# //   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/garjones/gareth.com/master/proxmox-pass.sh)"
-# //
+# // To run this script see:
 # // https://gareth.com/index.php/2021/03/05/proxmox-pci-passthrough/
 # //----------------------------------------------------------------------------------------------------------
 # // Gareth Jones - gareth@gareth.com
