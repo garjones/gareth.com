@@ -5,6 +5,7 @@
 # // homebridge installation script
 # //----------------------------------------------------------------------------------------------------------
 # // To run this script remotely:
+# //   apt update
 # //   apt -y install curl
 # //   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/garjones/gareth.com/master/homebridge.sh)"
 # //
@@ -13,8 +14,7 @@
 # // Gareth Jones - gareth@gareth.com
 # //----------------------------------------------------------------------------------------------------------
 
-# update & upgrade
-apt update
+# upgrade
 apt -y upgrade
 
 # setup repo
