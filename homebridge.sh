@@ -5,8 +5,7 @@
 # // homebridge installation script
 # //----------------------------------------------------------------------------------------------------------
 # // To run this script remotely:
-# //   apt update
-# //   apt -y install curl sudo
+# //   apt update && apt -y install curl sudo
 # //   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/garjones/gareth.com/master/homebridge.sh)"
 # //
 # // Based on - https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Debian-or-Ubuntu-Linux
@@ -33,6 +32,3 @@ npm install -g --unsafe-perm homebridge homebridge-config-ui-x
 hb-service install --user homebridge
 
 # done
-echo "Complete setup in the gui."
-echo "Login to the web interface by going to http://<ip address of your server>:8581."
-echo "The default user is admin with password admin."
