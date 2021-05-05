@@ -6,7 +6,7 @@
 # //----------------------------------------------------------------------------------------------------------
 # // To run this script remotely:
 # //   apt update
-# //   apt -y install curl
+# //   apt -y install curl sudo
 # //   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/garjones/gareth.com/master/homebridge.sh)"
 # //
 # // Based on - https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Debian-or-Ubuntu-Linux
