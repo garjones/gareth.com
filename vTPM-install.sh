@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# https://www.reddit.com/r/Proxmox/comments/oai5cr/guide_vtpm_and_secureboot_capability_in_a/
-# https://github.com/rayures/vTPM
-# https://github.com/tianocore/tianocore.github.io/wiki/Common-instructions
-# https://github.com/stefanberger/
-# https://www.reddit.com/r/Proxmox/comments/oai5cr/guide_vtpm_and_secureboot_capability_in_a/
-
 # check i am (g)root
 if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 
