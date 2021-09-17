@@ -33,12 +33,13 @@ ldconfig
 
 # OVMF with Secureboot and TPM - compile
 git clone https://github.com/tianocore/edk2 ~/vtpm/edk2
-cd ~/edk2
+cd ~/vtpm/edk2
 git submodule update --init
 make -C BaseTools
 . edksetup.sh
 build -p OvmfPkg/OvmfPkgX64.dsc -b RELEASE -a X64 -t GCC5 -D TPM_ENABLE -D TPM_CONFIG_ENABLE -D SECURE_BOOT_ENABLE -D NETWORK_TLS_ENABLE
-cp ~/edk2/Build/OvmfX64/RELEASE_GCC5/FV/OVMF.fd ~/vtpm
+cp ~/vtpm/edk2/Build/OvmfX64/RELEASE_GCC5/FV/OVMF.fd ~/vtpm
 
 # download the launch script
+cd ~/vtpm
 wget https://raw.githubusercontent.com/garjones/gareth.com/master/vTPM-launch.sh
