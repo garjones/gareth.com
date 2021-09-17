@@ -1,6 +1,11 @@
-# Making a launch script for the VM
-qm show 201 --pretty > launchvm.sh
-nano launchvm.sh
+# launch script for Proxmox VM with a virtual TPM
+
+# check for VMID
+re='^[0-9]+$'
+if ! [[ $1 =~ $re ]] ; then echo "Usage: $0 <VMID>" ; exit 1 ; fi 
+
+# dump vm configuration into temp launch script
+qm show $1 --pretty > launch$1.sh
 
 # -drive 'if=pflash,unit=0,format=raw,readonly,file=/root//OVMF.fd' \
 
@@ -9,9 +14,11 @@ nano launchvm.sh
 # -device 'tpm-tis,tpmdev=tpm0' \
 # -bios /root/OVMF.fd
 
-# Launch SWTPM like so
-mkdir /var/tpm0
-swtpm socket --tpmstate dir=/var/tpm0 --tpm2 --ctrl type=unixio,path=/var/tpm0/swtpm-sock
+# create folder for the socket
+[ ! -d "/var/tpm$1" ] && mkdir /var/tpm$1
 
-# Launch VM
-./launchvm.sh
+# launch the service in the background
+swtpm socket --tpmstate dir=/var/tpm$1 --tpm2 --ctrl type=unixio,path=/var/tpm$1/swtpm-sock &
+
+# launch VM
+#./launchvm.sh
