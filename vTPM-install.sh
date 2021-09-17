@@ -43,3 +43,4 @@ cp ~/vtpm/edk2/Build/OvmfX64/RELEASE_GCC5/FV/OVMF.fd ~/vtpm
 # download the launch script
 cd ~/
 wget https://raw.githubusercontent.com/garjones/gareth.com/master/vTPM-launch.sh
+chmod +x vTPM-launch.sh
