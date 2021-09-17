@@ -41,6 +41,6 @@ build -p OvmfPkg/OvmfPkgX64.dsc -b RELEASE -a X64 -t GCC5 -D TPM_ENABLE -D TPM_C
 cp ~/vtpm/edk2/Build/OvmfX64/RELEASE_GCC5/FV/OVMF.fd ~/vtpm
 
 # download the launch script
-cd ~/
+cd ~/vtpm
 wget https://raw.githubusercontent.com/garjones/gareth.com/master/vTPM-launch.sh
 chmod +x vTPM-launch.sh
