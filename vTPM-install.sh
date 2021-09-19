@@ -5,7 +5,10 @@ if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 
 # install dependent packages
 apt update -y
-apt -y install automake expect gnutls-bin libgnutls28-dev wget git gawk m4 socat fuse libfuse-dev checkinstall tpm-tools libgmp-dev libtool libglib2.0-dev libjson-glib-dev libnspr4-dev libnss3-dev libssl-dev libtasn1-6-dev net-tools libseccomp-dev python-setuptools python3-pip python3-distutils build-essential uuid-dev iasl gcc nasm 
+apt install -y automake expect gnutls-bin libgnutls28-dev wget git gawk m4 socat fuse libfuse-dev checkinstall libgmp-dev libtool libglib2.0-dev libjson-glib-dev libnspr4-dev libnss3-dev libssl-dev libtasn1-6-dev net-tools libseccomp-dev python-setuptools python3-pip python3-distutils build-essential uuid-dev iasl gcc nasm 
+
+# this one causes a problem - do we need it?
+apt install -y tpm-tools
 
 # create directory
 mkdir ~/vtpm
