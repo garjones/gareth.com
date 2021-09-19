@@ -17,7 +17,7 @@ cd ~/vtpm/libtpms
 ./bootstrap.sh
 ./configure  --with-openssl --with-tpm2 
 make
-checkinstall --install=yes --default
+checkinstall --install=yes
 cp ~/vtpm/libtpms/*.deb ~/vtpm
 
 # swtpm
